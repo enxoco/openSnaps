@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="subtitle">
+    <h2>openSnaps</h2>
+    <br>
+    <h2>Enter your secret message below and click submit</h2>
+  
+    <p>
+      We will generate a self destructing link for you.<br /> Please note that the link can only be viewed once.
+    </p>
+    <div class="my-5"></div>
+
+    <div class="toast" id="snapToast">
+      <input type="text copyClipboard" id="snapText" value="" />
+      <a href="" class="btn btn-submit" id="snapCopy">Copy to Clipboard</a>
+      <script src="snapCopy.js"></script>
+
+    </div>
+    <form name="snaps" id="snaps" method="POST">
+      <textarea class="form-control" name="secret" id="secret" placeholder="Enter your secret here..."></textarea>
+
+      <input type="hidden" name="tool" value="secrets" />
+      <input id="getSecret" type="submit" class="btn btn-submit" value="Get Secret" />
+    </form>
+
+    <div class="footer">
+      <p><small>Your secret message is encrypted and stored in memory on our server. Once your message is read it is erased from memory and gone forever. Don't just take my word for it, check the <strong><a href="https://github.com/enxoco/one-time-secret">source code</a></strong>. In addition I don't store or
+          collect any personal or identifyable information. I only keep a record of the number of times the service has
+          been used. Copyright 2020 <a href="https://liveinaterminal.com">Enxo LLC</a></small></p>
+    </div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "openSnaps",
+  "version": "1.0",
+  "description": "Free/Open Source self destructing message generator from https://nxone.co",
+  "permissions": ["activeTab", "declarativeContent", "storage", "contextMenus"],
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/undraw_throw_away_ldjd.png",
+      "32": "images/undraw_throw_away_ldjd.png",
+      "48": "images/undraw_throw_away_ldjd.png",
+      "128": "images/undraw_throw_away_ldjd.png"
+    }
+  },
+  "icons": {
+    "16": "images/undraw_throw_away_ldjd.png",
+    "32": "images/undraw_throw_away_ldjd.png",
+    "48": "images/undraw_throw_away_ldjd.png",
+    "128": "images/undraw_throw_away_ldjd.png"
+  },
+  "manifest_version": 2
+}
